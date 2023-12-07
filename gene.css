@@ -1,0 +1,117 @@
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100px;
+    padding: 20px;
+  }
+  
+  .movie-card {
+    border: 2px solid #01386b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 260px;
+    height: 440px;
+    background-color: #043d74;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.4s;
+  }
+  
+  .movie-card:hover {
+    box-shadow: 0 15px 10px 10px 16px rgba(0, 0, 0, 0.2);
+    background-color: #0b65b9;
+    transform: scale(1.05);
+    cursor: pointer
+  }
+  
+  
+  .movie-card h3{
+    margin: 0 10px 10px 10px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .movie-description {
+    padding: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  .movie-button {
+    background-color: #fff;
+    color: #10476b;
+    border: 2px solid #fff; 
+    padding: 5px 10px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, border 0.3s; 
+  }
+  
+  .movie-button:hover {
+    background-color: #023353;
+    color: #fff;
+    box-shadow: 0 15px 10px 10px 16px rgba(0, 0, 0, 0.2);
+    transform: rotate(0deg);
+    border: 2px solid #fff; 
+  }
+  
+  /* Botão "ASSISTIR" */
+  .movie-button:hover.assistir {
+    transform: translateX(5px);
+  }
+  
+  /* Botão "DETALHES" */
+  .movie-button:hover.detalhes {
+    transform: translateX(5px);
+  }
+
+  
+.genre-menu {
+    background-color: #373f51;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(131, 129, 129, 0.2);
+    margin-bottom: 5%;
+  }
+  
+  .genre-menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 0 15px;
+    border-radius: 5px;
+    text-shadow: 4px 0px 3px #01386b;
+    scroll-behavior: smooth;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .genre-menu-item:hover {
+    background-color: #0055a5;
+    text-shadow: 7px 0px 6px #1e87e9;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+  }
+  
